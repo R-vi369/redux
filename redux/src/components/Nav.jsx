@@ -1,19 +1,20 @@
 import React from 'react'
-import './Nav.scss'
 import {Link} from 'react-router-dom'
 const Nav = () => {
   return (
     <>
       
-      <div className='nav'>
+      <div className='flex justify-around h-[4rem] items-center bg-black text-white'>
 
-        <div className="logo">
+        <div className="cursor-pointer">
+          <Link to='/'>
             Redux
+          </Link>
         </div>
-        <div className="navLinks">
+        <div className="flex gap-4">
 
-        <Link className='link' to='/'> home</Link>
-        <Link className='link' to='/cart'> Cart</Link>
+        <Link className='text-white  text-xl ' to='/'> home</Link>
+        <Link className='text-xl text-white' to='/cart'> Cart</Link>
         </div>
 
       </div>
