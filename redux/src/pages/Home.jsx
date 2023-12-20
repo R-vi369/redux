@@ -4,8 +4,8 @@ const Home = () => {
   return (
     <div>
 
-    <Product/>
-    <div>Home</div>
+      <Product />
+      <div>Home</div>
     </div>
   )
 }

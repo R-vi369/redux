@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import '../styles/Product.scss'
 const Product = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -17,11 +16,14 @@ const Product = () => {
 
                 {
                     products.map(product => (
-                        <div className='card' key={product.id}>
-                            <img src={product.image} alt="" />
+                       
+
+                        <div className='' key={product.id}>
+                            <img src={product.image} alt="" className='w-[100px]' />
                             <h4>{product.title}</h4>
                             <h5>{product.price}</h5>
                         </div>
+                      
                     ))
                 }
             </div>
